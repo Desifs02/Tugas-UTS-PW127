@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   DfsCakeGalery
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .header h1 {
+            flex-grow: 1;
+            font-size: 24px;
+            margin: 0;
+        }
+        .header .pro-button {
+            font-size: 14px;
+            color: #6c63ff;
+            border: 1px solid #6c63ff;
+            border-radius: 20px;
+            padding: 5px 10px;
+            margin-right: 10px;
+        }
+        .header .search-icon {
+            font-size: 20px;
+            color: #000;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            padding: 10px;
+        }
+        .nav a.active {
+            color: #6c63ff;
+            border-bottom: 2px solid #6c63ff;
+        }
+        .filter-bar {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .filter-bar select, .filter-bar button {
+            font-size: 14px;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .filter-bar button.active {
+            color: #6c63ff;
+            border: 1px solid #6c63ff;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .view-all {
+            text-align: center;
+            padding: 10px 0;
+        }
+        .view-all a {
+            text-decoration: none;
+            color: #6c63ff;
+            font-size: 16px;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <h1>
+   Welcome to my lovely cake galery!
+   </h1>
+   <button class="pro-button">
+    Sweet cake
+   </button>
+   <i class="fas fa-search search-icon">
+   </i>
+  </div>
+  <div class="nav">
+   <a class="active" href="#">
+    pict
+   </a>
+   <a href="#">
+    recipe
+   </a>
+   <a href="#">
+    how to make
+   </a>
+   <a href="#">
+    video
+   </a>
+  </div>
+  <div class="filter-bar">
+   <select>
+    <option>
+     all cake
+    </option>
+   </select>
+   <button class="active">
+    sweet
+   </button>
+   <button>
+    the most
+   </button>
+   <button>
+    world
+   </button>
+  </div>
+  <div class="gallery">
+   <img alt="Stack of pancakes with strawberries on top" height="200" src="https://storage.googleapis.com/a1aa/image/uDctO2alDhpgHNaBKg8Pe7nrP4eAtoc9IzCncGBUvdGndqrTA.jpg" width="200"/>
+   <img alt="Croissants on a plate" height="200" src="https://storage.googleapis.com/a1aa/image/Zz74wlwWTvIDIt74QJGwlbfUPZAUk7Zx2eS0C3JzHfqZ7UXnA.jpg" width="200"/>
+   <img alt="Assorted pastries in a box" height="200" src="https://storage.googleapis.com/a1aa/image/P4CiG6efjMgrJkIxzvQFpsNq0saYjsiPlDBsVNfe3Ajl2puOB.jpg" width="200"/>
+   <img alt="Brownies on a plate" height="200" src="https://storage.googleapis.com/a1aa/image/s8rOSHotICaDOpYEivJNmYHoxxGqsn0pyH0eK4L3SAWzO11JA.jpg" width="200"/>
+   <img alt="Chocolate cake with cherries on top" height="200" src="https://storage.googleapis.com/a1aa/image/MSQEAOjT0E7lMJMi4n1edopIW9Q2e3T6nmg9U6fQIvnV7UXnA.jpg" width="200"/>
+   <img alt="Slice of carrot cake with cream cheese frosting" height="200" src="https://storage.googleapis.com/a1aa/image/gJIrsDi0Fj5zI54mlxkCPZquNiDL5TjzkesvZwS1AxhyO11JA.jpg" width="200"/>
+  </div>
+  <div class="view-all">
+   <a href="#">
+    happy cake smile!
+   </a>
+  </div>
+ </body>
+</html>
